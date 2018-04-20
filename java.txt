@@ -1,0 +1,28 @@
+interface Employee
+{
+	String companyName="TCS";
+	String city="Hyderabad";
+	void employeeData();
+}
+class EmployeeDemo implements Employee
+{
+	String empName="Pradeep";
+	int empId      =102;
+	int salary     =50000;
+public void employeeData()
+{
+System.out.println("Employee ID="+empId);	
+System.out.println("Employee NAME="+empName);
+System.out.println("Employee Salary="+salary);	
+System.out.println("Employee City="+city);	
+System.out.println("Employee Company="+companyName);
+}
+}
+class  IntTest2
+{
+	public static void main(String[] args) 
+	{
+		Employee n=new EmployeeDemo();
+		n.employeeData();
+	}
+}
